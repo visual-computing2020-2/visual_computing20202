@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>visual computing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Visual Computing</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="imgEscala.html" class="nav-link">Escala de grises</a></li>
+            <li class="nav-item"><a href="mask.html" class="nav-link">Mascaras de convolución</a></li>
+            <li class="nav-item"><a href="video.html" class="nav-link">video</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+
+
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md ftco-animate">
+            <h2 class="mb-3">Mascaras de convolución y escala de grises aplicado a un video</h2>
+            <p>Se aplicaron diferentes tipos de mascaras para un video con extensión .mov y aprovechando la función map()de processing, mapeamos la posición del puntero del mouse en el rango de espacio donde se despliega el video, con el fin de llevar estos valores dentro del rango a un rango entre 1 y 5, con el fin de aplicar un filtro definido para una determinada subregion dentro del video.</p>
+            <p> Se observa una disminucion de los frames por segundo al aplicarse cada uno de los filtros, en cambio se mantiene constante cuando se aplica la conversión a escala de grises</p>
+            <video src="images/video.mp4" width=640 height=250 controls >
+
+        </div>
+        <div class="container">
+
+          <p> </p>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 bg-primary p-4">
+              <h2 class="ftco-heading-2">Contactame</h2>
+              <ul class="ftco-footer-social list-unstyled mb-0">
+                <li class="ftco-animate"><a href="https://github.com/" target="_blank"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/rafico.rdm/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navegación</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Inicio</a></li>
+                <li><a href="#" class="py-2 d-block">imagenes Escala Grises</a></li>
+                <li><a href="#" class="py-2 d-block">Mascaras de Convolución</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Universidad Nacional de Colombia</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">rasalgadol@unal.edu.co </span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

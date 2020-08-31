@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>visual computing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Visual Computing</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="imgEscala.html" class="nav-link">Escala de grises</a></li>
+            <li class="nav-item"><a href="mask.html" class="nav-link">Mascaras de convolución</a></li>
+            <li class="nav-item"><a href="video.html" class="nav-link">video</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md ftco-animate">
+            <h2 class="mb-3">#1. Conversión a escala de grises (Promedio RGB) y ascii</h2>
+            <p  class="mb-3" style="text-align:justify"> Se recorre la imagen pixel a pixel tomando el promedio de los 3 colores RGB del pixel y se reemplaza el valor por el promedio obtenido obteniendo el resultado final una vez promediados todos los pixeles, en un determinado valor de gris. Para convertir la imagen en ascii, se define un array de simbolos de tamaño 256 que nos van a servir como insumo para la imagen resultado, como segundo paso recorremos la imagen, con un paso determinado por la variable resolución que hemos definido de acuerdo si queremos simbolos mas grandes o pequeños para una textura más fina, para cada iteración obtenemos el valor del color con el fin de obtener su valor de brillo, y le asociamos un caracter definido en el array de simbolos.</p>
+           
+            <h2 class="mb-3">#2. Conversión a escala de grises (Luma) y ascii </h2>
+
+            <p class="mb-3" style="text-align:justify">  Se realiza exactamente el mismo procedimiento anterior, pero en vez de sacar un promedio del RGB usamos la siguiente fórmula que toma cada componente del RGB y lo multiplica por un factor: color_gray = 0.2126R + 007152G + 0.0722B
+              </p >
+
+              <p></p>
+              <img src="images/grises.png" alt="" class="img-fluid">
+
+
+
+
+
+              <h2 class="mb-3">#3. Conversión a escala de grises (Luma Shader) </h2>
+
+              <p class="mb-3" style="text-align:justify"> Para esta parte se emplea shaders para hacer el procesamiento a escala de grises por hardware
+                </p >
+
+               
+
+              <h2 class="mb-3">#4. Despliegue del histograma (Luma) </h2>
+
+              <p class="mb-3" style="text-align:justify">  Para esta parte del taller se usan tres canvas(imagen original, imagen escala de grises e histograma). Se almacenan las frecuencias de los diferentes valores de brillo de la imagen en escala de grises, tomando en cuenta que cada canal de color tiene 256 niveles de intensidad posibles, cad apunto representado por un valor de brillo en un rango desde 0(negros) hasta 255(blancos) y valores intermedios los diferentes valores de gris y luego se gráfica estas frecuencias mostrando información sobre el brillo y contraste de la imagen.
+                </p >
+
+
+
+              <img src="images/histograma.png" alt="" class="img-fluid">
+
+              <p>  </p>
+              <img src="images/histograma2.png" alt="" class="img-fluid">
+
+            
+
+
+
+        </div>
+        <div class="container">
+
+       <p> <a href="https://github.com/" target="_blank" > Código </a></p> 
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 bg-primary p-4">
+              <h2 class="ftco-heading-2">Contactame</h2>
+              <ul class="ftco-footer-social list-unstyled mb-0">
+                <li class="ftco-animate"><a href="https://github.com/" target="_blank"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/rafico.rdm/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navegación</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Inicio</a></li>
+                <li><a href="#" class="py-2 d-block">imagenes Escala Grises</a></li>
+                <li><a href="#" class="py-2 d-block">Mascaras de Convolución</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Universidad Nacional de Colombia</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">rasalgadol@unal.edu.co </span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
