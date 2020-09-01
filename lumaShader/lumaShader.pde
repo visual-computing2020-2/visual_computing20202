@@ -7,7 +7,7 @@ void setup(){
   
   size(615, 390, P2D);
    background(0,0,10);
-  photo = loadImage("rfc.jpg");
+  photo = loadImage("prueba.png");
   shape = createShape(RECT, 10, 10, photo.width, photo.height);
   photoTransform = createShape(RECT, photo.width+15, 10, photo.width, photo.height);
   shape.setTexture(photo);
